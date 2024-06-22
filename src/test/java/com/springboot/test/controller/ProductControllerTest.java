@@ -19,6 +19,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(ProductController.class)
 public class ProductControllerTest {
 
+    /**
+     * MockMvc 가짜 Service
+     */
     @Autowired
     private MockMvc mockMvc;
 
@@ -44,7 +47,7 @@ public class ProductControllerTest {
                 .andDo(print());
 
 
-
+        // verity() 실행됐는지 검증하는 역할
         verify(productService).getProduct(123L);
     }
 }
