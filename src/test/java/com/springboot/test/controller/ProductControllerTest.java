@@ -47,7 +47,7 @@ public class ProductControllerTest {
                 .andDo(print());
 
 
-
+        // verity() 실행됐는지 검증하는 역할
         verify(productService).getProduct(123L);
     }
 }
