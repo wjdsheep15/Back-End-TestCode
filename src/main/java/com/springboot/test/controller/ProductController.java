@@ -27,6 +27,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body(productResponseDto);
     }
 
+    // createProduce() 테스트 코드 작성
     @PostMapping("/post")
     public ResponseEntity<ProductResponseDto> createProduct(@RequestBody ProductDto productDto){
         ProductResponseDto productResponseDto = productService.saveProduct(productDto);
