@@ -62,5 +62,6 @@ public class ProductRepositoryTest {
 
         // then
         assertFalse(productRepository.findById(selectedProduct.getNumber()).isPresent());
+
     }
 }
